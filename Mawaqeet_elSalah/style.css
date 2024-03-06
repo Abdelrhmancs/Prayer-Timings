@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+
+.main{
+height: 100vh;
+width: 100%;
+background-image: url("images/mosqueBg.jpg");
+}
+.Mawaqeet{
+  width: 100%; 
+}
+.Mawaqeet .box{
+    background-color: rgb(179 173 173 / 40%);
+    border-radius: 3px transparent 10px transparent;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 175px;
+
+}
+.Mawaqeet .box h2{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    padding: 20px;
+}
+.Mawaqeet .box h4{
+    margin: 10px;
+    padding: 10px;
+}
+.cont{
+    margin-left: 110px;
+}
+.contry{
+    justify-content: end;
+    border-bottom: 1px solid #fff;
+    margin: 0 105px;
+    margin-bottom: 90px;
+}
+.contry h1{
+    padding: 50px;
+    margin: 50px;
+    font-size: 60px;
+    
+}
+.list{
+    background-color: rgb(179 173 173 / 40%);
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+
+
+/* Start  hide elements */
+.hide{
+    display: none;
+}
+/* End  hide elements */
+/*  Start loader */
+
+.loader {
+    height: 4px;
+    width: 130px;
+    --c:no-repeat linear-gradient(#0010a3 0 0);
+    background: var(--c),var(--c),#d7b8fc;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 50%);
+  }
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
+  /*  End loader */
+
+
+  /* Responsive Design In Small Screen */
+  @media(max-width:767px){
+    .Mawaqeet .box{
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        box-shadow: 0 2px 15px rgba(90, 2, 78, 0.712);
+        border-radius: 7px;
+        background-color: #3D314A;
+        
+    }
+    .cont{
+        margin: 0;
+    }
+    .Mawaqeet{
+        flex-direction: column-reverse;
+        /* to reflect the order of Mawaqeet from fajer to Ishaa */
+    }
+    .Mawaqeet .box h2{
+        margin-bottom: 0;
+        border-bottom: none;
+        padding: 0;
+        float: right;
+        color: #AB8476;
+    }
+    .Mawaqeet .box h4{
+        margin: 0;
+        padding: 0;
+        float: left;
+        color: #AB8476;
+    }
+    .main{
+        
+        background-image: none;
+        height: 100%;
+    }
+    .body{
+        background-color: #1A1423;
+    
+    }
+    .contry h1{
+        padding: 0px;
+        margin: 10px;
+        font-size: 60px;
+        justify-content: center;
+        color: #AB8476;
+        
+    }
+    .contry-city h4{
+        margin-top: 10px;
+        padding: 0px;
+        color: #AB8476;
+    }
+    .list{
+        background-color:#3D314A;
+        color: #AB8476;
+        width: 150px;
+        height: 40px;
+        border: none;
+        margin-bottom: 10px;
+    }
+    
+   
+  }
